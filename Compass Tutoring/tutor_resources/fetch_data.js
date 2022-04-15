@@ -60,9 +60,34 @@ const math_resources = [
         "link": "https://www.quranmualim.com/all-2nd-grade-math-worksheets-pdf-free-printable-download/",
         "dscr": "This is a Best collection of free 2nd Grade Math Worksheets pdf, organized by topics such as addition, subtraction, division, mental math and more",
         "grade": "2",
-        "category": "Website",
+        "category": "Website"
     }
 ];
+
+const english_resources  = [
+    {
+        "title": "English worksheet",
+        "link": "https://www.quranmualim.com/all-2nd-grade-math-worksheets-pdf-free-printable-download/",
+        "dscr": "This is a Best collection of free 2nd Grade Math Worksheets pdf, organized by topics such as addition, subtraction, division, mental math and more",
+        "grade": "2",
+        "category": "Website"
+    },
+    {
+        "title": "English worksheet",
+        "link": "https://www.quranmualim.com/all-2nd-grade-math-worksheets-pdf-free-printable-download/",
+        "dscr": "This is a Best collection of free 2nd Grade Math Worksheets pdf, organized by topics such as addition, subtraction, division, mental math and more",
+        "grade": "2",
+        "category": "Website"
+    },
+    {
+        "title": "English worksheet",
+        "link": "https://www.quranmualim.com/all-2nd-grade-math-worksheets-pdf-free-printable-download/",
+        "dscr": "This is a Best collection of free 2nd Grade Math Worksheets pdf, organized by topics such as addition, subtraction, division, mental math and more",
+        "grade": "2",
+        "category": "Website"
+    }
+];
+
 
 var dataFetched = false;
 
@@ -74,4 +99,5 @@ async function fetch_data() {
         return;
     }
     math_info = await (await fetch("math/data/math_resources.json")).json();
+    english_info = await (await fetch("english/data/english_resources.json")).json();
 }
