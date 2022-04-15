@@ -88,6 +88,54 @@ const english_resources  = [
     }
 ];
 
+const french_resources = [
+    {
+        "title": "French Reading and Writing Resources",
+        "link": "https://www.ereadingworksheets.com/",
+        "dscr": "Ereading Worksheets provides teachers, parents, and motivated students with high-quality reading worksheets, activities, and resources aligned with Common Core State Standards. ",
+        "grade": "1-10",
+        "category": "Website"
+    },
+    {
+        "title": "French worksheet",
+        "link": "https://www.quranmualim.com/all-2nd-grade-math-worksheets-pdf-free-printable-download/",
+        "dscr": "This is a Best collection of free 2nd Grade Math Worksheets pdf, organized by topics such as addition, subtraction, division, mental math and more",
+        "grade": "2",
+        "category": "Book"
+    },
+    {
+        "title": "French worksheet",
+        "link": "https://www.quranmualim.com/all-2nd-grade-math-worksheets-pdf-free-printable-download/",
+        "dscr": "This is a Best collection of free 2nd Grade Math Worksheets pdf, organized by topics such as addition, subtraction, division, mental math and more",
+        "grade": "2",
+        "category": "Website"
+    }
+];
+
+const sciences_resources = [
+    {
+        "title": "Sciences Reading and Writing Resources",
+        "link": "https://www.ereadingworksheets.com/",
+        "dscr": "Ereading Worksheets provides teachers, parents, and motivated students with high-quality reading worksheets, activities, and resources aligned with Common Core State Standards. ",
+        "grade": "1-10",
+        "category": "Website"
+    },
+    {
+        "title": "Sciences worksheet",
+        "link": "https://www.quranmualim.com/all-2nd-grade-math-worksheets-pdf-free-printable-download/",
+        "dscr": "This is a Best collection of free 2nd Grade Math Worksheets pdf, organized by topics such as addition, subtraction, division, mental math and more",
+        "grade": "2",
+        "category": "Website"
+    },
+    {
+        "title": "Sciences worksheet",
+        "link": "https://www.quranmualim.com/all-2nd-grade-math-worksheets-pdf-free-printable-download/",
+        "dscr": "This is a Best collection of free 2nd Grade Math Worksheets pdf, organized by topics such as addition, subtraction, division, mental math and more",
+        "grade": "2",
+        "category": "Website"
+    }
+];
+
 
 var dataFetched = false;
 
@@ -100,4 +148,5 @@ async function fetch_data() {
     }
     math_info = await (await fetch("math/data/math_resources.json")).json();
     english_info = await (await fetch("english/data/english_resources.json")).json();
+    sciences_info = await (await fetch("sciences/data/sciences_resources.json")).json(); 
 }

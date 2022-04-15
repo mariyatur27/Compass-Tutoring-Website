@@ -63,12 +63,7 @@ iframe.newsletter {
   margin-left: 1%;
 }
 
-div#math_resource_section {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-}
-div#english_resource_section {
+div#english_resource_section , #sciences_resource_section , #math_resource_section , #french_resource_section{
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
