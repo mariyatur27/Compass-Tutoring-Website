@@ -68,6 +68,11 @@ div#math_resource_section {
   flex-wrap: wrap;
   padding-left: 0;
 }
+div#english_resource_section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
 .resource_box {
   box-shadow: 4px 4px 8px 0px rgb(34 60 80 / 20%);
   flex: 0 0 31.333333%;
