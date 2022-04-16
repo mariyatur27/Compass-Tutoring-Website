@@ -73,16 +73,16 @@ const english_resources  = [
         "category": "Website"
     },
     {
-        "title": "English worksheet",
-        "link": "https://www.quranmualim.com/all-2nd-grade-math-worksheets-pdf-free-printable-download/",
-        "dscr": "This is a Best collection of free 2nd Grade Math Worksheets pdf, organized by topics such as addition, subtraction, division, mental math and more",
-        "grade": "2",
+        "title": "English Ice Breaker Game for First Class",
+        "link": "https://www.weareteachers.com/editable-meet-the-teacher-slideshow/",
+        "dscr": "Whether you are teaching online or in-person, you’ll need to introduce yourself to students and their families! Our editable meet the teacher slideshow to the rescue.",
+        "grade": "1-10",
         "category": "Website"
     },
     {
-        "title": "English worksheet",
-        "link": "https://www.quranmualim.com/all-2nd-grade-math-worksheets-pdf-free-printable-download/",
-        "dscr": "This is a Best collection of free 2nd Grade Math Worksheets pdf, organized by topics such as addition, subtraction, division, mental math and more",
+        "title": "Books for Teaching English",
+        "link": "https://purlandtraining.com/free-books/27-free-books-for-teaching-english-pdf-digital-download/",
+        "dscr": "Download 27 FREE books for teaching English in one convenient digital download (zip file). As stated above, all the books are in the public domain, which means that anybody may use them for commercial and non-commercial purposes",
         "grade": "2",
         "category": "Website"
     }

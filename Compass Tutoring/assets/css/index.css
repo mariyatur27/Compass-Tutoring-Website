@@ -95,6 +95,21 @@ div#english_resource_section , #sciences_resource_section , #math_resource_secti
   background-color: #e9ef66;
   margin-left: 3%;
 }
+@media(max-width: 750px) {
+  .resource_box {
+    margin-left: 5.5%;
+    margin-bottom: 5%;
+    flex: 0 0 88.333333%;
+  }
+  .grades_buttons {
+    width: 29.7%;
+    margin-left: 2%;
+  }
+  .up {
+    margin-top: 8%;
+    margin-bottom: -15%;
+  }
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
