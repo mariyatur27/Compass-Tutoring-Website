@@ -6,6 +6,137 @@
 */
 //Start of the code for the contact section
 
+
+//Forming an invoice!
+const standard = {
+  four : 20,
+  eihgt : 18,
+  twelve : 16,
+  sixteen : 14,
+  twenty : 12
+}
+const advanced = {
+  four : 25,
+  eight : 23,
+  twelve : 21,
+  sixteen : 19,
+  twenty : 17
+}
+// Printing Function
+// var doc = new jsPDF();
+// var specialElementHandlers = {
+//     '#editor': function (element, renderer) {
+//         return true;
+//     }
+// };
+ 
+ 
+// $('#print-button').click(function () {
+//     doc.fromHTML($('#htmlContent').html(), 15, 15, {
+//         'width': 700,
+//         'elementHandlers': specialElementHandlers
+//     });
+//     doc.save('invoice.pdf');
+// });
+
+document.getElementById('submit-student-reg').addEventListener('click', function() {
+  var section = document.getElementById('invoice-window');
+  //Getting User Input:
+  var student_name = document.getElementById('student-name').value;
+  var parent_name = document.getElementById('parent-name').value;
+  var grade = document.getElementById('student-grade').value;
+  var package = document.querySelector('#package-options').value;
+  var subject = document.querySelector('#tutored-subject').value;
+  var reg_num = document.getElementById('reg_num').value;
+  var today = new Date();
+  var date = today.getFullYear()+''+(today.getMonth()+1)+''+today.getDate();
+  var date2 = today.getFullYear()+'/'+(today.getMonth()+1)+'/'+today.getDate();
+  var lesson_num = document.querySelector('#lesson-num').value;
+  var inputs_1 = document.querySelectorAll("input[type=text]");
+  var inputs_2 = document.querySelectorAll("input[type=email]");
+  var inputs_3 = document.querySelectorAll("input[type=number]");
+  // input field checkckers
+  var missing = 0;
+  if (grade > 12 || grade < 1){
+    missing ++;
+  }
+  for (var i = 0; i < inputs_1.length; i++) {
+    if (inputs_1[i].value == ''){
+      missing ++;
+    }
+  }
+  for (var i = 0; i < inputs_2.length; i++) {
+    if (inputs_2[i].value == ''){
+      missing ++;
+    }
+  }
+  for (var i = 0; i < inputs_3.length; i++) {
+    if (inputs_3[i].value == ''){
+      missing ++;
+    }
+  }
+
+  if (missing !== 0) {
+    console.log('missing data!!!!');
+    alert('Your registration form is missing required information and/or contains incorrect input! Please complete your form before submitting it and make sure all of your input is correct!');
+  }else{
+    document.getElementById('submit-student-reg').disabled = true;
+    let invoice = document.createElement('div'); invoice.classList.add('invoice-overlay');
+    let title = document.createElement('h1'); title.innerHTML = 'INVOICE';
+    let invoice_id = document.createElement('h4'); invoice_id.innerHTML = "Invoice ID: ".concat(package[0] + subject[0] + '-' + date + '_' + reg_num);
+    let table = document.createElement('div'); table.classList.add('row');
+      let sec1 = document.createElement('div'); sec1.classList.add('row-section-invoice');
+        let sec_title = document.createElement('h3'); sec_title.innerHTML = "Session Details";
+        sec1.appendChild(sec_title);
+        let student_name_t = document.createElement('h5'); student_name_t.innerHTML = 'Student Name: '.concat(student_name);
+        sec1.appendChild(student_name_t);
+        let parent_name_t = document.createElement('h5'); parent_name_t.innerHTML = 'Parnet Name: '.concat(parent_name);
+        sec1.appendChild(parent_name_t);
+        let student_grade_t = document.createElement('h5'); student_grade_t.innerHTML = 'Student Grade: '.concat(grade);
+        sec1.appendChild(student_grade_t);
+        let package_t = document.createElement('h5'); package_t.innerHTML = 'Package: '.concat(package);
+        sec1.appendChild(package_t);
+        let subject_t = document.createElement('h5'); subject_t.innerHTML = 'Subject(s): '.concat(subject);
+        sec1.appendChild(subject_t);
+        let duration = document.createElement('h5'); duration.innerHTML = 'Duration: 2 months (standard)';
+        sec1.appendChild(duration);
+      table.appendChild(sec1);
+
+      let sec2 = document.createElement('div'); sec2.classList.add('row-section-invoice');
+        let sec_title_2 = document.createElement('h3'); sec_title_2.innerHTML = "Payment Details";
+        sec2.appendChild(sec_title_2);
+          if (package == 'standard'){
+            var unit_price = standard[lesson_num];
+          }else if (package == 'advanced'){
+            var unit_price = advanced[lesson_num];
+          }
+          let unit_price_t = document.createElement('h5'); unit_price_t.innerHTML = "Unit Price: $".concat(unit_price).concat('.00');
+          sec2.appendChild(unit_price_t);
+          let hourly_price = document.createElement('h5'); hourly_price.innerHTML = "Monthly Cost: $".concat(unit_price * 4).concat('.00 / 1 month');
+          sec2.appendChild(hourly_price);
+          let subtotal = document.createElement('h5'); subtotal.innerHTML = "SUBTOTAL: $".concat(unit_price * 8).concat('.00 / 2 months'); subtotal.style.fontWeight = '800'; subtotal.style.backgroundColor = 'yellow';
+          sec2.appendChild(subtotal);
+      table.appendChild(sec2);
+      invoice.appendChild(table);
+      invoice.appendChild(title);
+      invoice.appendChild(invoice_id);
+      invoice.appendChild(table);
+
+      let sec_title_3 = document.createElement('h3'); sec_title_3.innerHTML = "Payment Terms: ";
+      invoice.appendChild(sec_title_3); 
+      let st_1 = document.createElement('h5'); st_1.innerHTML = "To be made payable to ".concat(parent_name);
+      invoice.appendChild(st_1);
+      let st_2 = document.createElement('h5'); st_2.innerHTML = "E-Transfer to info.compasstutoring@gmail.com after your first free lesson with your tutor.";
+      invoice.appendChild(st_2);
+      let date_today = document.createElement('h5'); date_today.innerHTML = "Date Issued: ".concat(date2);
+      invoice.appendChild(date_today);
+      let print_btn = document.createElement('button'); print_btn.innerHTML = 'Download Invoice'; print_btn.id='print-button'; print_btn.classList.add('submit-btn'); //print_btn.onclick = printInvoice();
+      invoice.appendChild(print_btn);
+      section.appendChild(invoice);
+    }
+})
+
+
 const contactForm = document.querySelector('.contact-form');
 let email = document.getElementById('email');
 let name = document.getElementById('name');
@@ -443,3 +574,4 @@ function totalCost(){
   });
 
 })()
+

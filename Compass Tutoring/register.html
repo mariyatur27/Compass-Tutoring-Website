@@ -17,12 +17,12 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="aos.css" rel="stylesheet">
   <link href="bootstrap.min.css" rel="stylesheet">
@@ -32,14 +32,11 @@
   <link href="swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <!-- <link href="index.css" rel="stylesheet"> -->
+  <link href="assets/css/index.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
 
-  <script src="fetch_data.js"></script>
-  <script src="french_resources.js"></script>
-  <script src="french_resources.json"></script>
-
   <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ae0443e66a65550fe7585c13d/9889f5342d06132da256b371f.js");</script>
+
   <script type="text/javascript">
     window.Trengo = window.Trengo || {};
     window.Trengo.key = 'uy3dbfxGUdKxSkN6Bvce';
@@ -73,27 +70,42 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">About Us</a></li>
-          <li><a class="nav-link scrollto" href="#index.htmlteam">Team</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Tutors</a></li>
           <li><a class="nav-link scrollto" href="main.html">Resources for Tutors</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+          <li><a class="getstarted scrollto" href="free_program.html" targe="a_blank">Helping Ukrainians</a></li>
           <li><a class="getstarted scrollto" href="https://docs.google.com/forms/d/e/1FAIpQLSfYcNmvx_fE5y1-2TQRkBXWxJNf9CH5BMfwu-5vTOYLR8YqZg/viewform?usp=sf_link">Leave a Testimonial</a></li>
-          <li><a class="getstarted" id="ukrflag" href="free_program_ukr.html">Translate to Ukrainian</a></li>
+          <li class="dropdown"><a href="#"><span>Translate</span> 
+            <!-- <i class="bi bi-chevron-down"></i> -->
+            <img class="icons_6" src="down-arrow.png" >
+          </a>
+            <ul>
+              <li><a href="chinese.html">中文</a></li>
+              <li><a href="russian.html">Русский</a></li>
+              <li><a href="french.html">Français</a></li>
+        </ul>
       </ul>
-      <img class="mobile-nav-toggle" src="menu.png" style="width: 10%; margin-left: 90%;">      
-    </nav><!-- .navbar -->
+       <img class="mobile-nav-toggle" src="menu.png" style="width: 10%; margin-left: 90%;">
+      </nav><!-- .navbar -->
     </div>
   </header><!-- End Header -->
 
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" class="d-flex align-items-center" style="margin-bottom: 8%;">
 
     <div class="container">
       <div class="row gy-4">
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="img1.svg" class="img-fluid animated" alt="">
+        </div>
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>French Resources for Our Tutors 🥐</h1>
-          <h2>If you are someone who is looking for additional resources for your lessons or you are someone who is wondering how you should run your lessons, this page is for you!</h2>
+          <h1>Personalised Quality Online Tutoring for Students</h1>
+          <h2>We will help to navigate you through your educational journey!</h2>
           <div>
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
           </div>
         </div>
       </div>
@@ -101,54 +113,48 @@
 
   </section><!-- End Hero -->
 
-  <section id="about" class="about" style="margin-bottom: -6%;">
-    <div class="container">
-      <!-- <div class="row">
-
-          <button class="grades_buttons" id="grade 1">
-            Grade 1
-          </button>
-          <button class="grades_buttons" id="grade 1">
-            Grade 2
-          </button>
-          <button class="grades_buttons" id="grade 1">
-            Grade 3
-          </button>
-          <button class="grades_buttons" id="grade 1">
-            Grade 4
-          </button>
-          <button class="grades_buttons" id="grade 1">
-            Grade 5
-          </button>
-          <button class="grades_buttons" id="grade 1">
-            Grade 6
-          </button>
-          <button class="grades_buttons" id="grade 1">
-            Grade 7
-          </button>
-          <button class="grades_buttons" id="grade 1">
-            Grade 8
-          </button>
-          <button class="grades_buttons" id="grade 1">
-            Grade 9
-          </button>
-          <button class="grades_buttons" id="grade 1">
-            Grade 10
-          </button>
-      </div> -->
+  <div class="form">
+    <div class="section-title" style="background-color: white;">
+        <h2>Tutoring Session Registration</h2>
+        <p>Get to know some of our amazing tutors!</p>
     </div>
-  </section>
+    <form id="student-reg">
+        <input type="text" placeholder="Student's Full Name" id='student-name'/><br>
+        <input type="text" placeholder="Parent's Full Name" id='parent-name'/><br>
+        <input type="text" placeholder="Student's Email Adress" /><br>
+        <input type="text" placeholder="Parent's Email Adress" /><br>
+        <input type="number" placeholder="What time are you registering for?" id='reg_num'/><br>
+        <input type="text" placeholder="Student's Grade" id='student-grade'/><br>
+        <label for="package-options">Tutoring Packages</label>
+        <select name="package-options" id="package-options">
+            <option id="standard" value="standard">Standard</option>
+            <option id="advanced" value="advanced">Advanced</option>
+            <!-- <option id="personalized" value="personalized">Personalized</option> -->
+        </select><br>
+        <label for="tutored-subject">Tutored Subejcts</label>
+        <select name="tutored-subject" id="tutored-subject">
+            <option value="Math">Math</option>
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="Sciences">Sciences</option>
+            <option value="Computer Science">Computer Sciences</option>
+        </select><br>
+        <label for="lesson-num">Number of Lessons</label>
+        <select name="lesson-num" id="lesson-num">
+            <option id="4-lessons" value="four">4 lessons/month</option>
+            <option id="8-lessons" value="eight">8 lessons/month</option>
+            <option id="12-lessons" value="twelve">12 lessons/month</option>
+            <option id="16-lessons" value="sixteen">16 lessons/month</option>
+            <option id="20-lessons" value="twenty">20 lessons/month</option>
+        </select><br>
+        <input type="text" placeholder="What would you like to improve?" /><br>
+        <input type="text" placeholder="Do you have any preferences?" /><br>
+        <input type="text" placeholder="How did you hear about us?" /><br>
+    </form>
+    <button class="submit-btn" id="submit-student-reg">Register</button>
+  </div>
 
-  <section id="about" class="about">
-    <div id="french_resource_section"></div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="container">
-        <h3>Have any questions? <a href="mailto:info.compasstutoring@gmail.com">Contact us!</a></h3>
-    </div>
-  </section>
-
+  <div id="invoice-window"></div>
 
   <div class="footer-top" id="foot">
     <div class="container">
@@ -168,7 +174,7 @@
           <ul>
             <li>
               <!-- <i class="bx bx-chevron-right"></i> -->
-              <a href="#hero">Home</a></li>
+               <a href="#hero">Home</a></li>
             <li>
               <!-- <i class="bx bx-chevron-right"></i> -->
               <a href="#about">About us</a></li>
@@ -234,12 +240,12 @@
     <img class="icons_5" src="https://image.flaticon.com/icons/png/128/130/130906.png">
 </a>
 <!-- Vendor JS Files -->
-<!-- <script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
 <script src="aos.js"></script>
 <script src="bootstrap.bundle.min.js"></script>
@@ -249,7 +255,23 @@
 <script src="swiper-bundle.min.js"></script>
 
 <!-- Template Main JS File -->
-<script>buidFrenchResources();</script>
-<script src="script.js"></script>
 <script src="main.js"></script>
+<script src="assets/js/main.js"></script>
+
+<!-- Start Open Web Analytics Tracker -->
+<script type="text/javascript" src="http://yourdomain/path/to/owa/modules/base/js/owa.tracker-combined-min.js"></script>
+<script type="text/javascript">
+//<![CDATA[s
+// Set base URL
+OWA.setSetting('baseUrl', 'http://yourdomain/path/to/owa/');
+// Create a tracker
+OWATracker = new OWA.tracker();
+OWATracker.setSiteId('yoursiteidgoeshere');
+OWATracker.trackPageView();
+OWATracker.trackClicks();
+OWATracker.trackDomStream();
+//]]>
+</script>
+<!-- End Open Web Analytics Code -->
+
 </body>

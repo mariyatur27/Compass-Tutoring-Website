@@ -1,9 +1,86 @@
 [
     {
-        "title": "Grade 2 Math Worksheets",
-        "link": "https://www.quranmualim.com/all-2nd-grade-math-worksheets-pdf-free-printable-download/",
-        "dscr": "This is a Best collection of free 2nd Grade Math Worksheets pdf, organized by topics such as addition, subtraction, division, mental math and more",
+        "title": "English Grammar Workbook",
+        "link": "https://www.pdfdrive.com/english-grammar-workbook-e17449466.html",
+        "dscr": "A book with loads of grammar exercises for ESL students of all levels",
+        "grade": "6-10",
+        "category": "Book"
+    },
+    {
+        "title": "Free Downloadable Grammar Books List (PDF)",
+        "link": "https://www.learnenglishteam.com/great-books-to-improve-your-english/",
+        "dscr": "A list of the best free English grammar books that you can simply download and read by yourself",
+        "grade": "2-10",
+        "category": "Website"
+    },
+    {
+        "title": "English Grammar Workbook For Dummies",
+        "link": "http://www.rhymesworld.com/sitebuildercontent/sitebuilderfiles/4657744.pdf",
+        "dscr": "A book with many grammar exercises and lessons for ESL students",
+        "grade": "3-10",
+        "category": "Book"
+    },
+    {
+        "title": "Grade 6 Grammar Practice Reproducibles",
+        "link": "https://www.hasdk12.org/cms/lib/PA01001366/Centricity/Domain/265/Grammar%20Workbook.pdf",
+        "dscr": "Grammar and reading exercises for students in grade 6",
+        "grade": "6",
+        "category": "Book"
+    },
+    {
+        "title": "Grammar and Language Workbook",
+        "link": "https://gifs.africa/wp-content/uploads/2020/05/Grade-6-English-Grammar-and-Language-Workbook.pdf",
+        "dscr": "A book containing many exercises for beginner English speakers",
+        "grade": "6-9",
+        "category": "Book"
+    },
+    {
+        "title": "English Reading and Writing Resources",
+        "link": "https://www.ereadingworksheets.com/",
+        "dscr": "Ereading Worksheets provides teachers, parents, and motivated students with high-quality reading worksheets, activities, and resources aligned with Common Core State Standards. ",
+        "grade": "1-10",
+        "category": "Website"
+    },
+    {
+        "title": "English Ice Breaker Game for First Class",
+        "link": "https://www.weareteachers.com/editable-meet-the-teacher-slideshow/",
+        "dscr": "Whether you are teaching online or in-person, you’ll need to introduce yourself to students and their families! Our editable meet the teacher slideshow to the rescue.",
+        "grade": "1-10",
+        "category": "Website"
+    },
+    {
+        "title": "Books for Teaching English",
+        "link": "https://purlandtraining.com/free-books/27-free-books-for-teaching-english-pdf-digital-download/",
+        "dscr": "Download 27 FREE books for teaching English in one convenient digital download (zip file). As stated above, all the books are in the public domain, which means that anybody may use them for commercial and non-commercial purposes",
         "grade": "2",
         "category": "Website"
+    },
+    {
+        "title": "Grammar Bytes",
+        "link": "https://chompchomp.com/menu.htm ",
+        "dscr": "Grammar resource and practice",
+        "grade": "1-9",
+        "category": "Website"
+    },
+    {
+        "title": "Free Rice - English",
+        "link": "https://freerice.com/ ",
+        "dscr": "English vocabulary practice with game",
+        "grade": "1-9",
+        "category": "Website"
+    },
+    {
+        "title": "E-Reading Worksheets",
+        "link": "https://www.ereadingworksheets.com/",
+        "dscr": "Variety of reading worksheets and activities",
+        "grade": "1-9",
+        "category": "Website"
+    },
+    {
+        "title": "English ESL Grade 10 Worksheets",
+        "link": "https://en.islcollective.com/english-esl-worksheets/search/grade+10",
+        "dscr": "English ESL worksheets in reading, grammar and writing for students in grade 10",
+        "grade": "10",
+        "category": "File"
     }
 ]
